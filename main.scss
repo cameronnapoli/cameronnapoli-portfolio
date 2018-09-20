@@ -1,8 +1,18 @@
-$bgColor : #000;
-$mainFont : 'Karla', sans-serif;
-$secondaryFont : arial;
-$fontColor: #000;
+// Global vars
+$header-font: 'Raleway', sans-serif;
+$body-font: arial;
+$font-color: #222222;
 
+$site-width: 900px;
+$header-height: 80px;
+
+$bg-color: #fff;
+
+$small-icon-width-height: 60px;
+$photo-border-color: #dddddd;
+
+
+// Global functions
 @mixin borderRadius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
@@ -10,28 +20,351 @@ $fontColor: #000;
           border-radius: $radius;
 }
 
+
+// Global settings
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
-    background-color: $bgColor;
-    font-family: $mainFont;
+    background-color: $bg-color;
+    font-family: $body-font;
+    color: $font-color;
 }
-.bubble {
-    width:50px;
-    height:50px;
-    @include borderRadius(50px);
-    border:3px solid white;
+a {
+    color: $font-color;
+    text-decoration: none;
 }
-#bubble1 {
+a:hover {}
+
+
+// Global classes
+.clear {
+    clear: both;
+    width: 100%;
+}
+.accomplishments {
+    font-weight: bold;
+    margin: 10px 0px 10px 0px;
+    clear:both;
+}
+.height10 {
+    height: 10px;
+}
+.img-icon {
+    width: $small-icon-width-height;
+    height: $small-icon-width-height;
+
+    border-radius: 1000px;
+    border: 4px solid $photo-border-color;
+    background-color: rgba(#ede8e8, 0.81);
+}
+.bold {
+    font-weight: bold;
+}
+.img-big {
+    width: 80px;
+    height: 80px;
+}
+.float_text {
+    float: left;
+}
+.l_text {
+    text-align: left;
+    width: 50%;
+}
+.r_text {
+    text-align: right;
+    width: 50%;
+}
+.float_img {
+    float: left;
+}
+.profile-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 1000px;
+    border: 4px solid $photo-border-color;
+}
+
+li {
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+
+
+// Start page styling
+#header {
+    $header-font-color: #1c1c1c;
+    $header-link-hover: #595959;
+
+    font-family: $header-font;
+    letter-spacing: 1px;
+
+    width: 100%;
+    height: $header-height;
+    position: fixed;
+    top: 0;
+
+
+    $grad-left: rgba(#8CABE6, 0.95);
+    $grad-right: rgba(#ECBDA1, 0.95);
+
+    background: -moz-linear-gradient(left, $grad-left 0%, $grad-right 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, $grad-left 0%, $grad-right 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, $grad-left 0%, $grad-right 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    // background-color: $grad-left;
+
+    #inner-header {
+
+        width: $site-width;
+        height: auto;
+        margin: 0px auto;
+
+        color: $header-font-color;
+
+        // Special CSS to be applied if screen size is reduced
+        @media only screen and (max-width: $site-width) {
+            width: auto;
+        }
+
+        #name {
+            width:220px;
+            float: left;
+
+            font-size: 27px;
+            font-weight: normal;
+            line-height: $header-height;
+
+            @media only screen and (max-width: $site-width) {
+                padding-left: 15px;
+            }
+        }
+
+        #links {
+            width: auto;
+            float: right;
+            display: block;
+
+            line-height: $header-height;
+
+            @media only screen and (max-width: $site-width) {
+                display: none;
+            }
+
+            .link {
+                width: auto;
+                float: left;
+                margin: 0px 12px;
+
+                font-size: 20px;
+                a {
+                    color: $header-font-color;
+                    transition: all 0.25s ease;
+                }
+                a:hover {
+                    color: $header-link-hover;
+                }
+            }
+            .link:hover {
+                cursor: pointer;
+            }
+        }
+        #dropdown_links {
+            float: right;
+            display: none;
+
+            // @media only screen and (max-width: $site-width) {
+            //     display: block;
+            // }
+        }
+    }
 
 }
-#bubble2 {
 
+#header-box {
+    width: 100%;
+    height: $header-height;
 }
-#bubble3 {
 
-}
-#bubble4 {
 
-}
-#bubble5 {
+#content {
+    width: $site-width;
+    height: auto;
 
+    margin: 0px auto;
+    font-size: 18px;
+
+    // @media only screen and (max-width: $site-width) {
+    //     width: auto;
+    // }
+
+    #inner-body {
+        padding: 8px;
+
+        .gray-line {
+            width: 98%;
+            height: 1px;
+            background-color: #e3e1e1;
+        }
+        .gray-line1 {
+            @extend .gray-line;
+            margin: 5px 1% 20px 1%;
+        }
+        .gray-line2 {
+            @extend .gray-line;
+            margin: 30px 1% 30px 1%;
+        }
+        .gray-line3 {
+            @extend .gray-line;
+            margin: 30px 1% 30px 1%;
+        }
+
+        .about_me {
+            .t_left {
+            }
+            .t_right {
+
+                table {
+                    width: 100%;
+                    tr {
+                        td.email {
+                            width: 42%;
+                            padding: 0% 4% 2% 4%;
+
+                            font-size: 22px;
+                            line-height: 22px;
+                            text-decoration: underline;
+                        }
+                        td.links {
+                            width: 42%;
+                            padding: 0% 4% 2% 4%;
+
+                            line-height: 22px;
+                            a {
+                                margin-right: 5px;
+                            }
+                        }
+                        td.bio {
+                            width: 92%;
+                            height: auto;
+                            padding: 0% 4% 0% 4%;
+                            line-height: 1.25;
+                        }
+                    }
+                }
+            }
+        }
+
+        .education {
+            table {
+                width: 100%;
+            }
+        }
+        .skills {
+            .clear {
+                height: 20px;
+            }
+            table {
+                .bold {
+                    width: 110px;
+
+                    font-weight: bold;
+                    vertical-align: top;
+                }
+                tr {}
+                td {
+                    padding-bottom: 10px;
+                }
+            }
+        }
+        .section {
+            box-shadow: 0px 0px 10px #dddddd inset;
+
+            padding: 15px 20px 20px 20px;
+            margin-bottom: 30px;
+            overflow: hidden;
+
+            table {
+                width: 100%;
+
+                tr {
+                    td.icon {
+                        width: $small-icon-width-height+20px;
+                    }
+                }
+            }
+
+            h2 {
+                font-weight: normal;
+                font-size: 27px;
+            }
+
+            .experience_section {
+                ul li {
+                    font-size: 18px;
+                }
+
+                .clear {
+                    height: 10px;
+                }
+            }
+            div#col1 {
+                width: 50%;
+                height: auto;
+                float: left;
+            }
+            div#col2 {
+                width: 50%;
+                height: auto;
+                float: left;
+            }
+        }
+        .projects {
+            h3 {}
+            .clear {
+                height: 50px;
+            }
+            a {
+                color: #215d70;
+                text-decoration: underline;
+            }
+            a:hover {
+                color: #498a9e;
+            }
+            .description {
+                padding: 20px 20px 10px 20px;
+                font-size: 19px;
+                line-height: 1.25;
+            }
+            .bullets {}
+        }
+    }
+
+    $footer-height: 40px;
+
+    #footer {
+        height: $footer-height;
+        margin: 0px 0px 20px 0px;
+
+        color: #818181;
+        font-size: 18px;
+        line-height: $footer-height;
+
+        // @media only screen and (max-width: $site-width) {
+        //     margin: 0px 15px 15px 15px;
+        // }
+        div.left {
+            height: $footer-height;
+            float: left;
+
+            text-align: left;
+        }
+        div.right {
+            height: $footer-height;
+            float: right;
+
+            text-align: right;
+        }
+    }
 }
