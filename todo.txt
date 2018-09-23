@@ -1,5 +1,0 @@
-
-
-3) Change fonts
-4) Setup web server
-5) Transfer domain

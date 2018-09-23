@@ -1,5 +1,6 @@
 // Global vars
 $header-font: 'Raleway', sans-serif;
+$section-title-font: 'Lato', sans-serif;
 $body-font: arial;
 $font-color: #222222;
 
@@ -279,8 +280,8 @@ li {
             }
         }
         .section {
-            box-shadow: 0px 0px 10px #dddddd inset;
-
+            box-shadow: 0px 0px 10px #ebe6e6 inset;
+            color: #393939;
             padding: 15px 20px 20px 20px;
             margin-bottom: 30px;
             overflow: hidden;
@@ -298,6 +299,7 @@ li {
             h2 {
                 font-weight: normal;
                 font-size: 27px;
+                font-family: $section-title-font;
             }
 
             .experience_section {
