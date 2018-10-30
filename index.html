@@ -1,64 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>File Not Found</title>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" >
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cameron Napoli - Portfolio</title>
+
 <style type="text/css">
-body {
-  background-color: #eee;
-}
-
-body, h1, p {
-  font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: normal;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.container {
-  margin-left:  auto;
-  margin-right:  auto;
-  margin-top: 177px;
-  max-width: 1170px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-.row:before, .row:after {
-  display: table;
-  content: " ";
-}
-
-.col-md-6 {
-  width: 50%;
-}
-
-.col-md-push-3 {
-  margin-left: 25%;
-}
-
-h1 {
-  font-size: 48px;
-  font-weight: 300;
-  margin: 0 0 20px 0;
-}
-
-.lead {
-  font-size: 21px;
-  font-weight: 200;
-  margin-bottom: 20px;
-}
-
-p {
-  margin: 0 0 10px;
-}
-
-a {
-  color: #3282e6;
-  text-decoration: none;
-}
+span.displaynone { display:none; }
 </style>
 
 <!-- Google Analytics -->
@@ -72,26 +18,450 @@ ga('create', 'UA-71738892-2', 'auto');
 ga('send', 'pageview', location.pathname);
 </script>
 <!-- End Google Analytics -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Compiled SASS -->
+<link href="https://fonts.googleapis.com/css?family=Raleway|Lato" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="main.css?v=3">
 </head>
-
 <body>
-<div class="container text-center" id="error">
-  <svg height="100" width="100">
-    <polygon points="50,25 17,80 82,80" stroke-linejoin="round" style="fill:none;stroke:#ff8a00;stroke-width:8" />
-    <text x="42" y="74" fill="#ff8a00" font-family="sans-serif" font-weight="900" font-size="42px">!</text>
-  </svg>
- <div class="row">
-    <div class="col-md-12">
-      <div class="main-icon text-warning"><span class="uxicon uxicon-alert"></span></div>
-        <h1>File not found (404 error)</h1>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6 col-md-push-3">
-      <p class="lead">Please use the link given to you in order to access the site.</p>
-    </div>
-  </div>
-</div>
 
+    <div id="header">
+        <div id="inner-header">
+            <div id="name">
+                Cameron Napoli
+            </div>
+            <div id="links">
+                <div class="link">
+                    <a href="#about_me">About Me</a>
+                </div>
+                <div class="link">
+                    <a href="#education">Education</a>
+                </div>
+                <div class="link">
+                    <a href="#experience">Experience</a>
+                </div>
+                <div class="link">
+                    <a href="#projects">Projects</a>
+                </div>
+            </div>
+            <div id="dropdown_links">
+                <!-- [-] -->
+            </div>
+        </div>
+    </div>
+
+    <div id="header-box">&nbsp;</div>
+
+    <div id="content">
+        <div class="clear height10"></div>
+        <div id="inner-body">
+
+            <div class="section about_me" id="about_me">
+                <h2>About Me</h2>
+                <div class="gray-line1"></div>
+
+
+                <!-- Outer container here that will flex -->
+                <table>
+                    <tr>
+                        <td class="t_left">
+                            <img src="imgs/profile-photo.gif" class="profile-photo" alt="profile photo" width="140" height="140" />
+                        </td>
+
+                        <td class="t_right">
+                            <table>
+                                <tr>
+                                    <td class="email">cameronnapoli&#64;<span class="displaynone">nulldisp</span>gmail.com</td>
+                                    <td class="links">
+                                        <a href="resources/cnapoli_resume.pdf?v=2" target="_blank" style="float:right;">
+                                            <img width="125" height="35" src="imgs/file-icon-comb.png" />
+                                        </a>
+                                        <a href="https://www.linkedin.com/in/cameronnapoli/" target="_blank" style="float:right;">
+                                            <img width="35" height="35" src="imgs/linkedin-logo.png" style="margin-right:5px;" />
+                                        </a>
+                                        <a href="https://github.com/cameronnapoli" target="_blank" style="float:right;">
+                                            <img width="35" height="35" src="imgs/github-logo.png" style="margin-right:5px;margin-top:-1px;" />
+                                        </a>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bio" colspan="2">
+                                        <span class="text-bio">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I
+                                            strive to uphold two main ideals when building software,
+                                            writing maintainable efficient code and continuous improvement
+                                            to progressively achieve goals.
+                                            One of my favorite quotes sums up the second ideal perfectly:
+                                            <br /><br />
+                                            <i>"The greatest enemy of a good plan is the dream of a perfect plan."
+                                            <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Carl von Clausewitz</i>
+                                        </span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <div class="clear"></div>
+
+
+                <!-- <div style="background-color:#f2ecb0;">
+                    <br><br>
+                    Add a javascript canvas effect in the background
+                    <br><br>
+                    Fade in background shadow for links
+                    <br><br>
+                    [Bio | Below]
+                </div> -->
+
+
+            </div>
+
+            <div class="section education" id="education">
+                <h2>Education</h2>
+                <div class="gray-line1"></div>
+
+                <table>
+                    <tr>
+                        <td>
+                            <img width="80" height="80" alt="UC Irvine" src="imgs/uci-logo.gif" class="img-icon img-big" />
+                        </td>
+                        <td>
+                            <div class="float_text l_text">
+                                <b>University of California &hyphen; Irvine</b>
+                            </div>
+                            <div class="float_text r_text">
+                                <b>Bachelor of Science</b>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="float_text l_text" style="width:65%;">
+                                <b>Major: </b><i>Computer Science and Engineering</i>
+                            </div>
+                            <div class="float_text r_text" style="width:35%;">
+                                <i>October 2014 - June 2018</i>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+
+                <div style="font-weight:bold;margin: 10px 0px 10px 0px; clear:both;">Relevant Coursework</div>
+
+                <div id="col1">
+                    <ul>
+                        <li>Programming in Python</li>
+                        <li>Data Structures & Algorithms</li>
+                        <li>Data Management with SQL</li>
+                    </ul>
+                </div>
+                <div id="col2">
+                    <ul>
+                        <li</li>
+                        <li>Programming in Java</li>
+                        <li>Machine Learning & Data Mining</li>
+                        <li>Computer Networks</li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <div class="section experience" id="experience">
+                <h2>Experience</h2>
+                <div class="gray-line1"></div>
+
+                <div class="experience_section">
+
+                    <table>
+                        <tr>
+                            <td class="icon">
+                                <img class="img-icon float_img" src="imgs/rimrock-logo.png" />
+                            </td>
+                            <td>
+                                <div class="float_text l_text">
+                                    <b>Rimrock Capital Management, LLC</b>
+                                </div>
+                                <div class="float_text r_text">
+                                    <b>Newport Beach, CA</b>
+                                </div>
+                                <div class="clear" style="height:0px;"></div>
+                                <div class="float_text l_text" style="width:50%;">
+                                    <i>Software Engineering Intern</i>
+                                </div>
+                                <div class="float_text r_text" style="width:50%;">
+                                    <i>Apr. 2018 - Aug. 2018</i>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="accomplishments">Accomplishments</div>
+
+                    <ul>
+	                    <li>Optimized and refactored Python code base to increase process reliability and error handling.</li>
+	                    <li>Designed and implemented MS SQL procedure queries for robust and accurate data querying.</li>
+                        <li>Employed test-driven development using C# unit and integration tests to ensure fail tolerant code.</li>
+                        <li>Led discussions with senior engineers to pinpoint and design project specific requirements.</li>
+                    </ul>
+                </div>
+
+                <div class="gray-line2"></div>
+
+                <div class="experience_section">
+                    <table>
+                        <tr>
+                            <td class="icon">
+                                <img class="img-icon float_img" src="imgs/moboware-logo.png" />
+                            </td>
+                            <td>
+                                <div class="float_text l_text">
+                                    <b>Moboware Inc.</b>
+                                </div>
+                                <div class="float_text r_text">
+                                    <b>Irvine, CA</b>
+                                </div>
+                                <div class="clear" style="height:0px;"></div>
+                                <div class="float_text l_text" style="width:50%;">
+                                    <i>Software Engineering Intern</i>
+                                </div>
+                                <div class="float_text r_text" style="width:50%;">
+                                    <i>June 2017 - Jan 2018</i>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="accomplishments">Accomplishments</div>
+
+                    <ul>
+                        <li>Created and optimized Python scripts to recapture over $40,000 in lost revenue for the company.</li>
+                        <li>Designed and implemented changes to a Python web-hook to increase customer onboarding.</li>
+                        <li>Integrated external JavaScript system into web app to give customers additional interaction options.</li>
+                        <li>Participated in the AGILE development process using JIRA and Git to track and complete sprints.</li>
+                    </ul>
+                </div>
+
+                <div class="gray-line2"></div>
+                <div class="experience_section">
+                    <table>
+                        <tr>
+                            <td class="icon">
+                                <img class="img-icon float_img" src="imgs/pitchin-logo.png" />
+                            </td>
+                            <td>
+                                <div class="float_text l_text">
+                                    <b>PitchIn Inc.</b>
+                                </div>
+                                <div class="float_text r_text">
+                                    <b>Irvine, CA</b>
+                                </div>
+                                <div class="clear" style="height:0px;"></div>
+                                <div class="float_text l_text" style="width:50%;">
+                                    <i>Backend Developer / Co-Founder</i>
+                                </div>
+                                <div class="float_text r_text" style="width:50%;">
+                                    <i>June 2016 - May 2017</i>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="accomplishments">Accomplishments</div>
+
+                    <ul>
+	                    <li>Implemented a scalable backend server using Laravel to connect a web-app and a mobile platform.</li>
+                        <li>Created web application using PHP, Laravel, Braintree, Twilio, Parse, AWS, Git, and HTML/CSS.</li>
+                        <li>Managed and reviewed code for a small development team using Asana for team management.</li>
+                        <li>Produced a NoSQL database model to ensure simplicity and efficient query transactions.</li>
+                    </ul>
+                </div>
+
+                <div class="gray-line2"></div>
+                <div class="experience_section">
+
+                    <table>
+                        <tr>
+                            <td class="icon">
+                                <img class="img-icon float_img" src="imgs/search-marketers-logo.png" />
+                            </td>
+                            <td>
+                                <div class="float_text l_text">
+                                    <b>SearchMarketers.com</b>
+                                </div>
+                                <div class="float_text r_text">
+                                    <b>Irvine, CA</b>
+                                </div>
+                                <div class="clear" style="height:0px;"></div>
+                                <div class="float_text l_text" style="width:50%;">
+                                    <i>Web Developer</i>
+                                </div>
+                                <div class="float_text r_text" style="width:50%;">
+                                    <i>Dec 2015 - March 2016</i>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="accomplishments">Accomplishments</div>
+
+                    <ul>
+                        <li>Created WordPress pages and modified functionality to best fit client's needs.</li>
+                        <li>Modified legacy code and modified outdated code with new custom functionality.</li>
+                        <li>Analyzed SQL Database and exported data for clients.</li>
+                    </ul>
+                </div>
+
+                <div class="gray-line2"></div>
+                <div class="experience_section">
+
+                    <table>
+                        <tr>
+                            <td class="icon">
+                                <img class="img-icon float_img" src="imgs/office-building.png" />
+                            </td>
+                            <td>
+                                <div class="float_text l_text">
+                                    <b>Dandy Media Works</b>
+                                </div>
+                                <div class="float_text r_text">
+                                    <b>Irvine, CA</b>
+                                </div>
+                                <div class="clear" style="height:0px;"></div>
+                                <div class="float_text l_text" style="width:50%;">
+                                    <i>Web Developer / Designer</i>
+                                </div>
+                                <div class="float_text r_text" style="width:50%;">
+                                    <i>July 2013 - March 2015</i>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="accomplishments">Accomplishments</div>
+
+                    <ul>
+                        <li>Wrote PHP scripts to automate certain undesirable parts of outdated web systems.</li>
+                        <li>Created interface components using a variety of software including CSS and jQuery.</li>
+                        <li>Gained experience using Linux servers and communication protocols such as SSH and FTP.</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="section skills" id="skills">
+                <h2>Skills</h2>
+                <div class="gray-line1"></div>
+
+                <table>
+                    <tr>
+                        <td class="bold">Advanced:</td>
+                        <td>
+                            Python, Flask, MySQL, JavaScript, React.js, HTML, CSS/SASS, Mac OS, Linux, Git
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Proficient:</td>
+                        <td>
+                            Django, Java, Go, C++, AWS EC2/S3, Arduino, PHP, Node.js/Express.js, jQuery, JIRA
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <div class="section projects" id="projects">
+                <h2>Projects</h2>
+
+                <div class="gray-line1"></div>
+
+                <h3>Laser Integrated Digital Turnstile (Senior Design) <span style="font-weight:100;"> - 2018</span> </h3>
+                <img style="width:100%;height:auto;" src="imgs/sen_design.gif" alt="Project Image">
+                <div class="description" style="margin-top:-30px;">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My
+                        senior design project goal was an Internet of Things tool for business analytics
+                        with which a business could track customer flow. We named this
+                        project the Laser Integrated Digital Turnstile System (LIDT).
+                        Code repositories can be found through these links:
+                        <a href="https://github.com/cameronnapoli/senior-design-backend" target="_blank">senior-design-backend</a>
+                        and
+                        <a href="https://github.com/cameronnapoli/senior-design-lidt" target="_blank">senior-design-lidt</a>. </p>
+                </div>
+                <div class="accomplishments">Accomplishments</div>
+                <div class="bullets">
+                    <ul>
+                        <li>Prototyped backend REST API using Flask and successfully connected to IOT embedded device</li>
+                        <li>Setup AWS VPC system to encapsulate the Linux API server and database for increased security</li>
+                        <li>Created SQL database design and deployed changes to MySQL server</li>
+                    </ul>
+                </div>
+
+
+                <div class="gray-line3"></div>
+
+                <h3>Django Phone Verification <span style="font-weight:100;"> - 2017</span></h3>
+                <img style="width:100%;height:auto;" src="imgs/phone_verif.gif" alt="Project Image">
+                <div class="description" style="margin-top:-30px;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this project, I created a phone verification REST API using Django and MySQL.
+                    The phone verification server uses Twilio to send a secret key that can be used
+                    to verify a user account. Repository for this project can be found here:
+                    <a href="https://github.com/cameronnapoli/open-source-phone-verification" target="_blank">open-source-phone-verification</a>.
+                </div>
+                <div class="accomplishments">Accomplishments</div>
+                <div class="bullets">
+                    <ul>
+                        <li>Designed and imlemented models for phone authentication data and user model</li>
+                        <li>Created endpoints for code generation and verification HTTP requests</li>
+                    </ul>
+                </div>
+
+
+                <div class="gray-line3"></div>
+
+                <h3>Laravel API for PitchIn <span style="font-weight:100;"> - 2017</span></h3>
+                <img style="width:100%;height:auto;" src="imgs/pitchin_proj.gif" alt="Project Image">
+                <div class="description" style="margin-top:-30px;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Designed and implemented a REST API for PitchIn. The purpose of the API was to
+                    provide a mobile application with an interface to for the database
+                    and billing system. The repository is not available due to intellectual property restrictions.
+                </div>
+                <div class="accomplishments">Accomplishments</div>
+                <div class="bullets">
+                    <ul>
+                        <li>Designed and implemented endpoints needed to achieve desired functionality for mobile devices</li>
+                        <li>Worked with three team members and successfully implemented changes alongside team</li>
+                        <li>Designed backend model using Parse (NoSQL database system)</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div id="footer">
+            <div class="left">&copy; Cameron Napoli 2018</div>
+            <div class="right">Last Updated: Oct. 15, 2018</div>
+        </div>
+    </div>
+
+<script type="text/javascript">
+var headerHeight = 80;
+
+$('a[href*="#"]')
+  // remove invalid links
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      &&location.hostname == this.hostname) {
+      // Find target element
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top-(headerHeight+10)
+          }, 500, function() {});
+      }
+    }
+  });
+</script>
 </body>
 </html>
