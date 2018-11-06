@@ -1,10 +1,15 @@
 // Global vars
 $header-font: 'Raleway', sans-serif;
 $section-title-font: 'Lato', sans-serif;
+
 $body-font: arial;
 $font-color: #222222;
+$text-font-size: 18px;
+$text-mid-font-size: 16px;
+$text-mobile-font-size: 14px;
 
 $site-width: 900px;
+$site-mobile-width: 600px;
 $header-height: 80px;
 
 $bg-color: #fff;
@@ -90,13 +95,6 @@ a:hover {
 
 .float_img {
   float: left;
-}
-
-.profile-photo {
-  width: 140px;
-  height: 140px;
-  border-radius: 1000px;
-  border: 4px solid $photo-border-color;
 }
 
 li {
@@ -202,92 +200,21 @@ li {
   height: auto;
 
   margin: 0px auto;
-  font-size: 18px;
+  font-size: $text-font-size;
 
-  // @media only screen and (max-width: $site-width) {
-  //     width: auto;
-  // }
+  @media only screen and (max-width: $site-width) {
+      width: auto;
+      font-size: $text-mid-font-size;
+  }
+
+  @media only screen and (max-width: $site-mobile-width) {
+      width: auto;
+      font-size: $text-mobile-font-size;
+  }
 
   #inner-body {
     padding: 8px;
 
-    .gray-line {
-      width: 98%;
-      height: 1px;
-      background-color: #e3e1e1;
-    }
-    .gray-line1 {
-      @extend .gray-line;
-      margin: 5px 1% 20px 1%;
-    }
-    .gray-line2 {
-      @extend .gray-line;
-      margin: 30px 1% 30px 1%;
-    }
-    .gray-line3 {
-      @extend .gray-line;
-      margin: 30px 1% 30px 1%;
-    }
-
-    .about_me {
-      .t_left {
-      }
-      .t_right {
-
-        table {
-          width: 100%;
-          tr {
-            td.email {
-              width: 42%;
-              padding: 0% 4% 2% 4%;
-
-              font-size: 22px;
-              line-height: 22px;
-              text-decoration: underline;
-            }
-            td.links {
-              width: 42%;
-              padding: 0% 4% 2% 4%;
-
-              line-height: 22px;
-              a {
-                margin-right: 5px;
-              }
-            }
-            td.bio {
-              width: 92%;
-              height: auto;
-              padding: 0% 4% 0% 4%;
-              line-height: 1.25;
-            }
-          }
-        }
-      }
-    }
-
-    .education {
-      table {
-        width: 100%;
-      }
-    }
-    .skills {
-      .clear {
-        height: 20px;
-      }
-      table {
-        .bold {
-          width: 110px;
-
-          font-weight: bold;
-          vertical-align: top;
-        }
-        tr {
-        }
-        td {
-          padding-bottom: 10px;
-        }
-      }
-    }
     .section {
       box-shadow: 0px 0px 10px #ebe6e6 inset;
       color: #393939;
@@ -312,10 +239,6 @@ li {
       }
 
       .experience_section {
-        ul li {
-          font-size: 18px;
-        }
-
         .clear {
           height: 10px;
         }
@@ -329,6 +252,178 @@ li {
         width: 50%;
         height: auto;
         float: left;
+      }
+    }
+
+    .gray-line {
+      width: 98%;
+      height: 1px;
+      background-color: #e3e1e1;
+    }
+    .gray-line1 {
+      @extend .gray-line;
+      margin: 5px 1% 20px 1%;
+    }
+    .gray-line2 {
+      @extend .gray-line;
+      margin: 30px 1% 30px 1%;
+    }
+    .gray-line3 {
+      @extend .gray-line;
+      margin: 30px 1% 30px 1%;
+    }
+
+    .about_me {
+
+      .about-me-box {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 160px 1fr 40px 40px 130px;
+        grid-gap: 0.2em;
+        justify-items: stretch;
+        align-items: stretch;
+      }
+      .about-me-photo {
+        grid-column: 1;
+        grid-row: 1/4;
+        place-self: center;
+        justify-items: start;
+        padding-right: 10px;
+
+        .profile-photo {
+          width: 140px;
+          height: 140px;
+          border-radius: 1000px;
+          border: 4px solid $photo-border-color;
+        }
+      }
+      .about-me-email {
+        grid-column: 2;
+        grid-row: 1;
+
+        text-decoration: underline;
+        font-size: 22px;
+      }
+      .about-me-github {
+        grid-column: 3;
+        grid-row: 1;
+        place-self: center;
+      }
+      .about-me-linkedin {
+        grid-column: 4;
+        grid-row: 1;
+        place-self: center;
+      }
+      .about-me-resume {
+        grid-column: 5;
+        grid-row: 1;
+        place-self: center;
+      }
+      .about-me-bio {
+        grid-column: 2/6;
+        grid-row: 2;
+        margin-top: 10px;
+      }
+      .about-me-quote {
+        padding-top: 15px;
+        font-style: italic;;
+      }
+
+      @media only screen and (max-width: $site-width) {
+        .about-me-box {
+          grid-template-columns: 1fr 1fr 40px 40px 130px;
+          grid-gap: 0.2em;
+          justify-items: stretch;
+          align-items: stretch;
+
+        }
+        .about-me-photo {
+          grid-column: 1;
+          grid-row: 2;
+        }
+        .about-me-email {
+          grid-column: 1/3;
+          grid-row: 1;
+          font-size: 18px;
+          align-self: center;
+        }
+        .about-me-github {
+          grid-column: 3;
+          grid-row: 1;
+        }
+        .about-me-linkedin {
+          grid-column: 4;
+          grid-row: 1;
+        }
+        .about-me-resume {
+          grid-column: 5;
+          grid-row: 1;
+        }
+        .about-me-bio {
+          grid-column: 2/6;
+          grid-row: 2;
+        }
+      }
+
+      @media only screen and (max-width: $site-mobile-width) {
+        .about-me-box {
+          grid-template-columns: 1fr 40px 40px 130px;
+
+          .profile-photo {
+            width: 80px;
+            height: 80px;
+            border: 2px solid $photo-border-color;
+          }
+        }
+        .about-me-photo {
+          grid-column: 1;
+          grid-row: 1;
+          place-self: left;
+        }
+
+        .about-me-github {
+          grid-column: 2;
+          grid-row: 1;
+        }
+        .about-me-linkedin {
+          grid-column: 3;
+          grid-row: 1;
+        }
+        .about-me-email {
+          grid-column: 1/5;
+          grid-row: 2;
+          font-size: 16px;
+          align-self: center;
+        }
+        .about-me-resume {
+          grid-column: 4;
+          grid-row: 1;
+        }
+        .about-me-bio {
+          grid-column: 1/5;
+          grid-row: 3;
+        }
+      }
+    }
+
+    .education {
+      table {
+        width: 100%;
+      }
+    }
+    .skills {
+      .clear {
+        height: 20px;
+      }
+      table {
+        .bold {
+          width: 110px;
+          font-weight: bold;
+          vertical-align: top;
+        }
+        td {
+          padding-bottom: 10px;
+        }
       }
     }
     .projects {
@@ -346,10 +441,7 @@ li {
       }
       .description {
         padding: 20px 20px 10px 20px;
-        font-size: 19px;
         line-height: 1.25;
-      }
-      .bullets {
       }
     }
   }
@@ -361,22 +453,25 @@ li {
     margin: 0px 0px 20px 0px;
 
     color: #818181;
-    font-size: 18px;
+    font-size: 14px;
     line-height: $footer-height;
 
-    // @media only screen and (max-width: $site-width) {
-    //     margin: 0px 15px 15px 15px;
-    // }
+    @media only screen and (max-width: $site-width) {
+        margin: 0px 15px 15px 15px;
+        font-size: 12px;
+    }
+    @media only screen and (max-width: $site-mobile-width) {
+        margin: 0px 15px 15px 15px;
+        font-size: 10px;
+    }
     div.left {
       height: $footer-height;
       float: left;
-
       text-align: left;
     }
     div.right {
       height: $footer-height;
       float: right;
-
       text-align: right;
     }
   }

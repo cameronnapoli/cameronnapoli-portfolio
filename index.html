@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Cameron Napoli - Portfolio</title>
+  <meta name="description" content="Portfolio website for Cameron Napoli. Showcasing Full Stack web development skills.">
+  <meta name="keywords" content="Cameron, Napoli, Portfolio, Software, Engineering, Backend, Full Stack, California">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style type="text/css">
-    span.displaynone {
-      display: none;
-    }
+    span.displaynone {display: none;}
   </style>
 
   <!-- Google Analytics -->
@@ -16,7 +17,6 @@
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
     ga('create', 'UA-71738892-2', 'auto');
     ga('send', 'pageview', location.pathname);
   </script>
@@ -25,7 +25,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- Compiled SASS -->
   <link href="https://fonts.googleapis.com/css?family=Raleway|Lato" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="main.css?v=3">
+  <link rel="stylesheet" type="text/css" href="main.css?v=11">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
 
@@ -66,47 +67,43 @@
 
 
       <!-- Outer container here that will flex -->
-      <table>
-        <tr>
-          <td class="t_left">
-            <img src="imgs/profile-photo.gif" class="profile-photo" alt="profile photo" width="140" height="140"/>
-          </td>
+      <div class="about-me-box">
+        <div class="about-me-photo">
+          <img src="imgs/profile-photo.gif" class="profile-photo" alt="profile photo" />
+        </div>
+        <div class="about-me-email">
+          cameronnapoli&#64;<span class="displaynone">nulldisp</span>gmail.com
+        </div>
 
-          <td class="t_right">
-            <table>
-              <tr>
-                <td class="email">cameronnapoli&#64;<span class="displaynone">nulldisp</span>gmail.com</td>
-                <td class="links">
-                  <a href="resources/cnapoli_resume.pdf?v=2" target="_blank" style="float:right;">
-                    <img width="125" height="35" src="imgs/file-icon-comb.png" alt="resume image" />
-                  </a>
-                  <a href="https://www.linkedin.com/in/cameronnapoli/" target="_blank" style="float:right;">
-                    <img width="35" height="35" src="imgs/linkedin-logo.png" style="margin-right:5px;" alt="LinkedIn Logo" />
-                  </a>
-                  <a href="https://github.com/cameronnapoli" target="_blank" style="float:right;">
-                    <img width="35" height="35" src="imgs/github-logo.png" style="margin-right:5px;margin-top:-1px;" alt="Github Logo" />
-                  </a>
+        <div class="about-me-github">
+          <a href="https://github.com/cameronnapoli" target="_blank" style="float:right;">
+            <img width="35" height="35" src="imgs/github-logo.png" style="margin-top:-1px;" alt="Github Logo" />
+          </a>
+        </div>
+        <div class="about-me-linkedin">
+          <a href="https://www.linkedin.com/in/cameronnapoli/" target="_blank" style="float:right;">
+            <img width="35" height="35" src="imgs/linkedin-logo.png" alt="LinkedIn Logo" />
+          </a>
+        </div>
+        <div class="about-me-resume">
+          <a href="resources/cnapoli_resume.pdf?v=148902" target="_blank" style="float:right;">
+            <img width="125" height="35" src="imgs/file-icon-comb.png" alt="resume image" />
+          </a>
+        </div>
+        <div class="about-me-bio">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I
+          strive to uphold two main ideals when building software,
+          writing maintainable efficient code and continuous improvement
+          to progressively achieve goals.
+          One of my favorite quotes sums up the second ideal perfectly:
 
-                </td>
-              </tr>
-              <tr>
-                <td class="bio" colspan="2">
-                  <span class="text-bio">
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I
-                      strive to uphold two main ideals when building software,
-                      writing maintainable efficient code and continuous improvement
-                      to progressively achieve goals.
-                      One of my favorite quotes sums up the second ideal perfectly:
-                      <br/><br/>
-                      <i>"The greatest enemy of a good plan is the dream of a perfect plan."
-                      <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Carl von Clausewitz</i>
-                  </span>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
+          <div class="about-me-quote">
+            "The greatest enemy of a good plan is the dream of a perfect plan."
+            <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Carl von Clausewitz
+          </div>
+        </div>
+
+      </div>
       <div class="clear"></div>
 
 
@@ -133,7 +130,7 @@
           </td>
           <td>
             <div class="float_text l_text">
-              <b>University of California &hyphen; Irvine</b>
+              <b>University of California, Irvine</b>
             </div>
             <div class="float_text r_text">
               <b>Bachelor of Science</b>
@@ -143,7 +140,7 @@
               <b>Major: </b><i>Computer Science and Engineering</i>
             </div>
             <div class="float_text r_text" style="width:35%;">
-              <i>October 2014 - June 2018</i>
+              <i>Oct. 2014 - Jun. 2018</i>
             </div>
           </td>
         </tr>
@@ -228,7 +225,7 @@
                 <i>Software Engineering Intern</i>
               </div>
               <div class="float_text r_text" style="width:50%;">
-                <i>June 2017 - Jan 2018</i>
+                <i>Jun. 2017 - Jan. 2018</i>
               </div>
             </td>
           </tr>
@@ -262,7 +259,7 @@
                 <i>Backend Developer / Co-Founder</i>
               </div>
               <div class="float_text r_text" style="width:50%;">
-                <i>June 2016 - May 2017</i>
+                <i>Jun. 2016 - May 2017</i>
               </div>
             </td>
           </tr>
@@ -297,7 +294,7 @@
                 <i>Web Developer</i>
               </div>
               <div class="float_text r_text" style="width:50%;">
-                <i>Dec 2015 - March 2016</i>
+                <i>Dec. 2015 - Mar. 2016</i>
               </div>
             </td>
           </tr>
@@ -331,7 +328,7 @@
                 <i>Web Developer / Designer</i>
               </div>
               <div class="float_text r_text" style="width:50%;">
-                <i>July 2013 - March 2015</i>
+                <i>Jul. 2013 - Mar. 2015</i>
               </div>
             </td>
           </tr>
@@ -440,7 +437,7 @@
 
   <div id="footer">
     <div class="left">&copy; Cameron Napoli 2018</div>
-    <div class="right">Last Updated: Oct. 15, 2018</div>
+    <div class="right">Last Updated: Nov. 6, 2018</div>
   </div>
 </div>
 
