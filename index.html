@@ -3,29 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <title>Cameron Napoli - Portfolio</title>
-  <meta name="description" content="Portfolio website for Cameron Napoli. Showcasing Full Stack web development skills.">
+  <meta name="description" content="Portfolio website for Cameron Napoli showcasing Full Stack web development skills.">
   <meta name="keywords" content="Cameron, Napoli, Portfolio, Software, Engineering, Backend, Full Stack, California">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style type="text/css">
-    span.displaynone {display: none;}
-  </style>
-
   <!-- Google Analytics -->
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-71738892-2', 'auto');
     ga('send', 'pageview', location.pathname);
   </script>
   <!-- End Google Analytics -->
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!-- Compiled SASS -->
+
+  <style type="text/css">
+    span.displaynone {
+      display: none;
+    }
+
+    /* Prevent bots from easy scraping */
+  </style>
   <link href="https://fonts.googleapis.com/css?family=Raleway|Lato" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="main.css?v=11">
+  <link rel="stylesheet" type="text/css" href="main.css?v=13">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -54,117 +63,93 @@
     </div>
   </div>
 </div>
-
 <div id="header-box">&nbsp;</div>
 
 <div id="content">
   <div class="clear height10"></div>
-  <div id="inner-body">
 
+  <div id="inner-body">
     <div class="section about_me" id="about_me">
       <h2>About Me</h2>
       <div class="gray-line1"></div>
 
-
-      <!-- Outer container here that will flex -->
       <div class="about-me-box">
         <div class="about-me-photo">
-          <img src="imgs/profile-photo.gif" class="profile-photo" alt="profile photo" />
+          <img src="imgs/profile-photo.gif" class="profile-photo" alt="profile photo"/>
         </div>
         <div class="about-me-email">
           cameronnapoli&#64;<span class="displaynone">nulldisp</span>gmail.com
         </div>
-
         <div class="about-me-github">
           <a href="https://github.com/cameronnapoli" target="_blank" style="float:right;">
-            <img width="35" height="35" src="imgs/github-logo.png" style="margin-top:-1px;" alt="Github Logo" />
+            <img width="35" height="35" src="imgs/github-logo.png" style="margin-top:-1px;" alt="Github Logo"/>
           </a>
         </div>
         <div class="about-me-linkedin">
           <a href="https://www.linkedin.com/in/cameronnapoli/" target="_blank" style="float:right;">
-            <img width="35" height="35" src="imgs/linkedin-logo.png" alt="LinkedIn Logo" />
+            <img width="35" height="35" src="imgs/linkedin-logo.png" alt="LinkedIn Logo"/>
           </a>
         </div>
         <div class="about-me-resume">
           <a href="resources/cnapoli_resume.pdf?v=148902" target="_blank" style="float:right;">
-            <img width="125" height="35" src="imgs/file-icon-comb.png" alt="resume image" />
+            <img width="125" height="35" src="imgs/file-icon-comb.png" alt="resume image"/>
           </a>
         </div>
         <div class="about-me-bio">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I
-          strive to uphold two main ideals when building software,
+          &emsp;I strive to uphold two main ideals when building software,
           writing maintainable efficient code and continuous improvement
-          to progressively achieve goals.
-          One of my favorite quotes sums up the second ideal perfectly:
-
+          to progressively achieve goals. One of my favorite quotes sums
+          up the second ideal perfectly:
           <div class="about-me-quote">
-            "The greatest enemy of a good plan is the dream of a perfect plan."
-            <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Carl von Clausewitz
+            "The greatest enemy of a good plan is the dream of a perfect plan."<br/>
+            &emsp;- Carl von Clausewitz
           </div>
         </div>
-
       </div>
       <div class="clear"></div>
-
-
-      <!-- <div style="background-color:#f2ecb0;">
-          <br><br>
-          Add a javascript canvas effect in the background
-          <br><br>
-          Fade in background shadow for links
-          <br><br>
-          [Bio | Below]
-      </div> -->
-
-
     </div>
 
     <div class="section education" id="education">
       <h2>Education</h2>
       <div class="gray-line1"></div>
 
-      <table>
-        <tr>
-          <td>
-            <img width="80" height="80" alt="UC Irvine" src="imgs/uci-logo.gif" class="img-icon img-big"/>
-          </td>
-          <td>
-            <div class="float_text l_text">
-              <b>University of California, Irvine</b>
-            </div>
-            <div class="float_text r_text">
-              <b>Bachelor of Science</b>
-            </div>
-            <div class="clear"></div>
-            <div class="float_text l_text" style="width:65%;">
-              <b>Major: </b><i>Computer Science and Engineering</i>
-            </div>
-            <div class="float_text r_text" style="width:35%;">
-              <i>Oct. 2014 - Jun. 2018</i>
-            </div>
-          </td>
-        </tr>
-      </table>
-
-
-      <div style="font-weight:bold;margin: 10px 0px 10px 0px; clear:both;">Relevant Coursework</div>
-
-      <div id="col1">
-        <ul>
-          <li>Programming in Python</li>
-          <li>Data Structures & Algorithms</li>
-          <li>Data Management with SQL</li>
-        </ul>
-      </div>
-      <div id="col2">
-        <ul>
-          <li>Programming in Java</li>
-          <li>Machine Learning & Data Mining</li>
-          <li>Computer Networks</li>
-        </ul>
+      <div class="education-grid1 img-and-four-grid">
+        <div class="education-grid1-image l-img-icon">
+          <img src="imgs/uci-logo.gif" class="img-icon img-big" alt="UC Irvine"/>
+        </div>
+        <div class="education-grid1-university tl">
+          <b>University of California, Irvine</b>
+        </div>
+        <div class="education-grid1-degree tr">
+          <b>Bachelor of Science</b>
+        </div>
+        <div class="education-grid1-major bl">
+          <b>Major: </b><i>Computer Science and Engineering</i>
+        </div>
+        <div class="education-grid1-dates br">
+          <i>Oct. 2014 - Jun. 2018</i>
+        </div>
       </div>
 
-
+      <div class="education-grid2">
+        <div class="education-grid2-relevant">
+          Relevant Coursework
+        </div>
+        <div class="education-grid2-bullet-l">
+          <ul>
+            <li>Programming in Python</li>
+            <li>Data Structures & Algorithms</li>
+            <li>Data Management with SQL</li>
+          </ul>
+        </div>
+        <div class="education-grid2-bullet-r">
+          <ul>
+            <li>Programming in Java</li>
+            <li>Machine Learning & Data Mining</li>
+            <li>Computer Networks</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <div class="section experience" id="experience">
@@ -172,31 +157,25 @@
       <div class="gray-line1"></div>
 
       <div class="experience_section">
+        <div class="img-and-four-grid">
+          <div class="l-img-icon">
+            <img class="img-icon" src="imgs/rimrock-logo.png" alt="Rimrock Logo"/>
+          </div>
+          <div class="tl">
+            <b>Rimrock Capital Management, LLC</b>
+          </div>
+          <div class="tr">
+            <b>Irvine, CA</b>
+          </div>
+          <div class="bl">
+            <i>Software Engineering Intern</i>
+          </div>
+          <div class="br">
+            <i>Apr. 2018 - Aug. 2018</i>
+          </div>
+        </div>
 
-        <table>
-          <tr>
-            <td class="icon">
-              <img class="img-icon float_img" src="imgs/rimrock-logo.png" alt="Rimrock Logo" />
-            </td>
-            <td>
-              <div class="float_text l_text">
-                <b>Rimrock Capital Management, LLC</b>
-              </div>
-              <div class="float_text r_text">
-                <b>Newport Beach, CA</b>
-              </div>
-              <div class="clear" style="height:0px;"></div>
-              <div class="float_text l_text" style="width:50%;">
-                <i>Software Engineering Intern</i>
-              </div>
-              <div class="float_text r_text" style="width:50%;">
-                <i>Apr. 2018 - Aug. 2018</i>
-              </div>
-            </td>
-          </tr>
-        </table>
         <div class="accomplishments">Accomplishments</div>
-
         <ul>
           <li>Optimized and refactored Python code base to increase process reliability and error handling.</li>
           <li>Designed and implemented MS SQL procedure queries for robust and accurate data querying.</li>
@@ -208,30 +187,25 @@
       <div class="gray-line2"></div>
 
       <div class="experience_section">
-        <table>
-          <tr>
-            <td class="icon">
-              <img class="img-icon float_img" src="imgs/moboware-logo.png" alt="Moboware Logo" />
-            </td>
-            <td>
-              <div class="float_text l_text">
-                <b>Moboware Inc.</b>
-              </div>
-              <div class="float_text r_text">
-                <b>Irvine, CA</b>
-              </div>
-              <div class="clear" style="height:0px;"></div>
-              <div class="float_text l_text" style="width:50%;">
-                <i>Software Engineering Intern</i>
-              </div>
-              <div class="float_text r_text" style="width:50%;">
-                <i>Jun. 2017 - Jan. 2018</i>
-              </div>
-            </td>
-          </tr>
-        </table>
-        <div class="accomplishments">Accomplishments</div>
+        <div class="img-and-four-grid">
+          <div class="l-img-icon">
+            <img class="img-icon" src="imgs/moboware-logo.png" alt="Moboware Logo"/>
+          </div>
+          <div class="tl">
+            <b>Moboware Inc.</b>
+          </div>
+          <div class="tr">
+            <b>Irvine, CA</b>
+          </div>
+          <div class="bl">
+            <i>Software Engineering Intern</i>
+          </div>
+          <div class="br">
+            <i>Jun. 2017 - Jan. 2018</i>
+          </div>
+        </div>
 
+        <div class="accomplishments">Accomplishments</div>
         <ul>
           <li>Created and optimized Python scripts to recapture over $40,000 in lost revenue for the company.</li>
           <li>Designed and implemented changes to a Python web-hook to increase customer onboarding.</li>
@@ -241,31 +215,27 @@
       </div>
 
       <div class="gray-line2"></div>
-      <div class="experience_section">
-        <table>
-          <tr>
-            <td class="icon">
-              <img class="img-icon float_img" src="imgs/pitchin-logo.png"/>
-            </td>
-            <td>
-              <div class="float_text l_text">
-                <b>PitchIn Inc.</b>
-              </div>
-              <div class="float_text r_text">
-                <b>Irvine, CA</b>
-              </div>
-              <div class="clear" style="height:0px;"></div>
-              <div class="float_text l_text" style="width:50%;">
-                <i>Backend Developer / Co-Founder</i>
-              </div>
-              <div class="float_text r_text" style="width:50%;">
-                <i>Jun. 2016 - May 2017</i>
-              </div>
-            </td>
-          </tr>
-        </table>
-        <div class="accomplishments">Accomplishments</div>
 
+      <div class="experience_section">
+        <div class="img-and-four-grid">
+          <div class="l-img-icon">
+            <img class="img-icon" src="imgs/pitchin-logo.png"/>
+          </div>
+          <div class="tl">
+            <b>PitchIn Inc.</b>
+          </div>
+          <div class="tr">
+            <b>Irvine, CA</b>
+          </div>
+          <div class="bl">
+            <i>Backend Developer / Co-Founder</i>
+          </div>
+          <div class="br">
+            <i>Jun. 2016 - May 2017</i>
+          </div>
+        </div>
+
+        <div class="accomplishments">Accomplishments</div>
         <ul>
           <li>Implemented a scalable backend server using Laravel to connect a web-app and a mobile platform.</li>
           <li>Created web application using PHP, Laravel, Braintree, Twilio, Parse, AWS, Git, and HTML/CSS.</li>
@@ -275,32 +245,26 @@
       </div>
 
       <div class="gray-line2"></div>
+
       <div class="experience_section">
-
-        <table>
-          <tr>
-            <td class="icon">
-              <img class="img-icon float_img" src="imgs/search-marketers-logo.png"/>
-            </td>
-            <td>
-              <div class="float_text l_text">
-                <b>SearchMarketers.com</b>
-              </div>
-              <div class="float_text r_text">
-                <b>Irvine, CA</b>
-              </div>
-              <div class="clear" style="height:0px;"></div>
-              <div class="float_text l_text" style="width:50%;">
-                <i>Web Developer</i>
-              </div>
-              <div class="float_text r_text" style="width:50%;">
-                <i>Dec. 2015 - Mar. 2016</i>
-              </div>
-            </td>
-          </tr>
-        </table>
+        <div class="img-and-four-grid">
+          <div class="l-img-icon">
+            <img class="img-icon" src="imgs/search-marketers-logo.png"/>
+          </div>
+          <div class="tl">
+            <b>SearchMarketers.com</b>
+          </div>
+          <div class="tr">
+            <b>Irvine, CA</b>
+          </div>
+          <div class="bl">
+            <i>Web Developer</i>
+          </div>
+          <div class="br">
+            <i>Dec. 2015 - Mar. 2016</i>
+          </div>
+        </div>
         <div class="accomplishments">Accomplishments</div>
-
         <ul>
           <li>Created WordPress pages and modified functionality to best fit client's needs.</li>
           <li>Modified legacy code and modified outdated code with new custom functionality.</li>
@@ -309,32 +273,27 @@
       </div>
 
       <div class="gray-line2"></div>
+
       <div class="experience_section">
+        <div class="img-and-four-grid">
+          <div class="l-img-icon">
+            <img class="img-icon" src="imgs/office-building.png" alt="Office Building"/>
+          </div>
+          <div class="tl">
+            <b>Dandy Media Works</b>
+          </div>
+          <div class="tr">
+            <b>Irvine, CA</b>
+          </div>
+          <div class="bl">
+            <i>Web Developer / Designer</i>
+          </div>
+          <div class="br">
+            <i>Jul. 2013 - Mar. 2015</i>
+          </div>
+        </div>
 
-        <table>
-          <tr>
-            <td class="icon">
-              <img class="img-icon float_img" src="imgs/office-building.png" alt="Office Building" />
-            </td>
-            <td>
-              <div class="float_text l_text">
-                <b>Dandy Media Works</b>
-              </div>
-              <div class="float_text r_text">
-                <b>Irvine, CA</b>
-              </div>
-              <div class="clear" style="height:0px;"></div>
-              <div class="float_text l_text" style="width:50%;">
-                <i>Web Developer / Designer</i>
-              </div>
-              <div class="float_text r_text" style="width:50%;">
-                <i>Jul. 2013 - Mar. 2015</i>
-              </div>
-            </td>
-          </tr>
-        </table>
         <div class="accomplishments">Accomplishments</div>
-
         <ul>
           <li>Wrote PHP scripts to automate certain undesirable parts of outdated web systems.</li>
           <li>Created interface components using a variety of software including CSS and jQuery.</li>
@@ -367,21 +326,18 @@
 
     <div class="section projects" id="projects">
       <h2>Projects</h2>
-
       <div class="gray-line1"></div>
 
       <h3>Laser Integrated Digital Turnstile (Senior Design) <span style="font-weight:100;"> - 2018</span></h3>
-      <img style="width:100%;height:auto;" src="imgs/sen_design.gif" alt="Project Image">
+      <img style="width:100%;height:auto;" src="imgs/sen_design.gif" alt="Project Image"/>
       <div class="description" style="margin-top:-30px;">
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My
-          senior design project goal was an Internet of Things tool for business analytics
-          with which a business could track customer flow. We named this
-          project the Laser Integrated Digital Turnstile System (LIDT).
-          Code repositories can be found through these links:
-          <a href="https://github.com/cameronnapoli/senior-design-backend" target="_blank">senior-design-backend</a>
-          and
+        <p>&emsp;My senior design project goal was an Internet of Things tool for business analytics
+          with which a business could track customer flow. We named this project the Laser
+          Integrated Digital Turnstile System (LIDT). Code repositories can be found through these links:
+          <a href="https://github.com/cameronnapoli/senior-design-backend" target="_blank">senior-design-backend</a> and
           <a href="https://github.com/cameronnapoli/senior-design-lidt" target="_blank">senior-design-lidt</a>. </p>
       </div>
+
       <div class="accomplishments">Accomplishments</div>
       <div class="bullets">
         <ul>
@@ -391,18 +347,18 @@
         </ul>
       </div>
 
-
       <div class="gray-line3"></div>
 
       <h3>Django Phone Verification <span style="font-weight:100;"> - 2017</span></h3>
       <img style="width:100%;height:auto;" src="imgs/phone_verif.gif" alt="Project Image">
       <div class="description" style="margin-top:-30px;">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this project, I created a phone verification REST API using
+        &emsp;In this project, I created a phone verification REST API using
         Django and MySQL.
         The phone verification server uses Twilio to send a secret key that can be used
         to verify a user account. Repository for this project can be found here:
         <a href="https://github.com/cameronnapoli/open-source-phone-verification" target="_blank">open-source-phone-verification</a>.
       </div>
+
       <div class="accomplishments">Accomplishments</div>
       <div class="bullets">
         <ul>
@@ -411,17 +367,16 @@
         </ul>
       </div>
 
-
       <div class="gray-line3"></div>
 
       <h3>Laravel API for PitchIn <span style="font-weight:100;"> - 2017</span></h3>
       <img style="width:100%;height:auto;" src="imgs/pitchin_proj.gif" alt="Project Image">
       <div class="description" style="margin-top:-30px;">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Designed and implemented a REST API for PitchIn. The purpose of
-        the API was to
-        provide a mobile application with an interface to for the database
+        &emsp;Designed and implemented a REST API for PitchIn. The purpose of
+        the API was to provide a mobile application with an interface to for the database
         and billing system. The repository is not available due to intellectual property restrictions.
       </div>
+
       <div class="accomplishments">Accomplishments</div>
       <div class="bullets">
         <ul>
@@ -430,10 +385,8 @@
           <li>Designed backend model using Parse (NoSQL database system)</li>
         </ul>
       </div>
-
     </div>
   </div>
-
 
   <div id="footer">
     <div class="left">&copy; Cameron Napoli 2018</div>
@@ -442,15 +395,15 @@
 </div>
 
 <script>
-  var headerHeight = 80;
+  var headerHeight = $('#header').height();
 
   $('a[href*="#"]')
   // remove invalid links
     .not('[href="#"]')
     .not('[href="#0"]')
     .click(function (event) {
-      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-        && location.hostname == this.hostname) {
+      if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '')
+        && location.hostname === this.hostname) {
         // Find target element
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
